@@ -76,9 +76,9 @@ const advantages = [
 ];
 
 const cases = [
-  { title: '大型石化企业', category: '石油化工', description: '为中石油某分公司提供高压无缝管，年供应量达5000吨' },
-  { title: '食品级管道系统', category: '食品卫生', description: '为知名乳制品企业供应食品级不锈钢管，确保生产安全' },
-  { title: '医疗器械配套', category: '医疗领域', description: '为医疗器械厂商提供精密不锈钢管，品质达到医疗级标准' },
+  { title: '大型石化企业', category: '石油化工', description: '为中石油某分公司提供高压无缝管，年供应量达5000吨', image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_48e0a747-1e7d-4d15-9a6a-cd434abe869b.jpeg?sign=1805436322-0cf5f73e5a-0-e8863b22591af91aa9a08498ab46f7db3e0033f5234cb3d141f9a607f2604244' },
+  { title: '食品级管道系统', category: '食品卫生', description: '为知名乳制品企业供应食品级不锈钢管，确保生产安全', image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_4fbf4521-1d81-4d6b-b365-04150aabeb6b.jpeg?sign=1805436323-66c8cd3385-0-5e6371aafbacb2f901a3abeb6b10db5e412f6efe2b7bdc7e803c3da52d7e3714' },
+  { title: '医疗器械配套', category: '医疗领域', description: '为医疗器械厂商提供精密不锈钢管，品质达到医疗级标准', image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_deefb578-ea6a-4df5-9295-37aea23d0013.jpeg?sign=1805436322-21e0901099-0-f56a2aa4931a46028f53db58bd3e86921d9f73b3469ba3b9f9519e402c6efec8' },
 ];
 
 export default function Home() {
@@ -90,7 +90,7 @@ export default function Home() {
       <section id="hero" className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_e96710a8-e90a-4481-a19b-08f6b671ef7c.jpeg?sign=1805427034-ab19cfd1f8-0-6a5d97557e93df87013968b7933352d3782afebbc43fcf6ff3a55f1fece78e3b"
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_ff3292e8-df2c-4792-a30c-09f451114c24.jpeg?sign=1805436246-31f942e91b-0-9984701c1982efb5f08d16f12c415cf70792dd7fad2afd99ceb083089c49ea9f"
             alt="背景"
             fill
             className="object-cover opacity-20"
@@ -182,7 +182,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_8bdf882b-89bb-4b55-b8c6-b6e8bdbc78c4.jpeg?sign=1805427035-38d8d73ce3-0-327cf2a481d2d099cbebcccac4d4d4e6785bf871faa34805aba2c72c7f590858"
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_c01feed1-98f1-4cc4-b0be-64d9f022a69d.jpeg?sign=1805436246-ded31bc994-0-9716b855460f252f040700e1f581e5032b6cae6889ec925d72a50026695e3ae8"
                   alt="现代化生产工厂"
                   fill
                   className="object-cover"
@@ -203,7 +203,7 @@ export default function Home() {
       <section id="products" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499"
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_c01feed1-98f1-4cc4-b0be-64d9f022a69d.jpeg?sign=1805436246-ded31bc994-0-9716b855460f252f040700e1f581e5032b6cae6889ec925d72a50026695e3ae8"
             alt="产品背景"
             fill
             className="object-cover opacity-10"
@@ -295,7 +295,7 @@ export default function Home() {
               <Card key={index} className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
                 <div className="h-48 relative overflow-hidden">
                   <Image
-                    src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499"
+                    src={caseItem.image}
                     alt={caseItem.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"

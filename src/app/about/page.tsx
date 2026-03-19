@@ -117,7 +117,7 @@ export default function AboutPage() {
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_ea3dd0a6-3b51-4a21-b843-a23b6a878820.jpeg?sign=1805431098-6ce6d427ef-0-91afccfe75ac21d6668a70a8c5526a0afb3660017d467d91f04815ccd7bfe65f"
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_f11efdc0-5972-4cd5-b6d9-eecf38daf2f8.jpeg?sign=1805436410-987521bc9d-0-9108bf8d6966c74d4094db2891931d069b50e3cba8f760f9cc082e890e95f03e"
             alt="背景"
             fill
             className="object-cover opacity-10"
@@ -174,7 +174,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_fc3da8d1-7551-4540-a3ae-a31a341aba7f.jpeg?sign=1805431094-14665c9d27-0-3c7833577d7468ecb6a79db1b15685987fface298c5390fd57bffe268bc571ec"
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_f11efdc0-5972-4cd5-b6d9-eecf38daf2f8.jpeg?sign=1805436410-987521bc9d-0-9108bf8d6966c74d4094db2891931d069b50e3cba8f760f9cc082e890e95f03e"
                   alt="工厂车间"
                   fill
                   className="object-cover"

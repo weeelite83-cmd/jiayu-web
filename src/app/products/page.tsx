@@ -30,7 +30,7 @@ const productCategories = [
     name: '不锈钢无缝管',
     icon: <Layers className="w-8 h-8" />,
     description: '采用先进冷轧工艺，高精度、高光洁度，适用于高压、高温环境',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_04d86004-0989-4fe1-a947-68f90622c976.jpeg?sign=1805431123-b3089ca052-0-fdc0e12c06a7381ef715b4d0293ccd849a8f7b120ba8dd6b4c0a39c8418963c5',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_854975b1-9a8b-4e21-b7bf-2a3f20b3673c.jpeg?sign=1805436103-614d79560d-0-29b331e67bd4d8bda66b9e4236b77ca5aceb25c17bfc834242841c701a29c95d',
     features: [
       '冷轧/冷拔工艺生产',
       '内外表面光洁度高',
@@ -51,7 +51,7 @@ const productCategories = [
     name: '不锈钢焊管',
     icon: <Factory className="w-8 h-8" />,
     description: '精密焊接工艺，规格齐全，广泛应用于流体输送和装饰领域',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_e1511acb-7a10-48b6-8f28-0050be6df58a.jpeg?sign=1805433089-c7c3080006-0-c76846e75469ef29c7ec3ca6e1efc8de8e32d290c83d62971d6c23c0283374e0',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_08a1a744-0e8e-49f2-b41e-3573b0d8e432.jpeg?sign=1805436103-46bc2aff61-0-d221cbba28793c834f817553eb2ec60e601be5d3362890448ba361ec1ca397eb',
     features: [
       '自动焊接生产线',
       '焊缝平整美观',
@@ -72,7 +72,7 @@ const productCategories = [
     name: '不锈钢装饰管',
     icon: <Award className="w-8 h-8" />,
     description: '表面光亮美观，适用于建筑装饰、家具、五金制品等',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_1acd5b27-3d82-4218-92b6-11f3476b4a4a.jpeg?sign=1805433088-bd7df8e9d3-0-73066609116aa6c682c608157852eecb637bda44e25abc009ef2b48bb5784db1',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_05ba7afd-5df7-4889-8b2b-f5323bc461f7.jpeg?sign=1805436102-54076daf66-0-c71a09a9f54bce204c5b8b3e7640ccf5e865dbcf392caf303c8d65222b296ae4',
     features: [
       '表面光亮度高',
       '多种表面处理',
@@ -93,7 +93,7 @@ const productCategories = [
     name: '不锈钢管件',
     icon: <Cog className="w-8 h-8" />,
     description: '弯头、三通、法兰等配套管件，满足不同连接需求',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_f1459abe-e44b-4574-aedf-741acc711649.jpeg?sign=1805433088-828b22f188-0-aa79b9f23501e6f67ecfbf3ca4769526e1b75a517b0bfc4eeac11b06d929cc4d',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_d9fc6948-bfb1-49a2-8835-76b070412f2a.jpeg?sign=1805436102-843a655433-0-2d671d3f4dd753aa2a823cba141cdabb0787deb7416ec51ad150cead068d0290',
     features: [
       '种类齐全',
       '精密加工',
@@ -114,7 +114,7 @@ const productCategories = [
     name: '不锈钢流体管',
     icon: <Droplets className="w-8 h-8" />,
     description: '专用于给排水、排污、换热器等流体输送系统',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_8e1dfdd6-18ea-4c9c-8687-e97edc0f4a77.jpeg?sign=1805433088-7a65a164da-0-617fec6fbdf4917795197061be502e90881ea1ec19ddd6f17d8820efc865461b',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_73268428-b0ad-4be8-b65f-d94909c8af29.jpeg?sign=1805436103-8c7a31f35f-0-5c3f912fcdd360b113d3c1df160ab57efed4ba9b745d57d7922464e767206aca',
     features: [
       '流体阻力小',
       '耐腐蚀性强',
@@ -135,7 +135,7 @@ const productCategories = [
     name: '特种不锈钢管',
     icon: <Shield className="w-8 h-8" />,
     description: '双相钢、镍基合金等特种材质，满足苛刻工况需求',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_797fe543-72d1-45ca-a446-846a804a4844.jpeg?sign=1805433088-ad8e0a302f-0-1169e3e338dd737e4811892f53907f74b941bd27330cdac4dfea4cc5889af493',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_03e9772c-d4b1-4fbb-bb52-68a8e309fd46.jpeg?sign=1805436102-8761523de1-0-d5c8db45174a4c87c01fb58a6d930fe1715d9080528491c12eda324429455365',
     features: [
       '特殊材质',
       '极端环境适用',
@@ -161,7 +161,7 @@ export default function ProductsPage() {
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_04d86004-0989-4fe1-a947-68f90622c976.jpeg?sign=1805431123-b3089ca052-0-fdc0e12c06a7381ef715b4d0293ccd849a8f7b120ba8dd6b4c0a39c8418963c5"
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_854975b1-9a8b-4e21-b7bf-2a3f20b3673c.jpeg?sign=1805436103-614d79560d-0-29b331e67bd4d8bda66b9e4236b77ca5aceb25c17bfc834242841c701a29c95d"
             alt="产品背景"
             fill
             className="object-cover opacity-10"
