@@ -51,7 +51,7 @@ const productCategories = [
     name: '不锈钢焊管',
     icon: <Factory className="w-8 h-8" />,
     description: '精密焊接工艺，规格齐全，广泛应用于流体输送和装饰领域',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_c2c85c8a-435c-4c04-bbe5-9a6e06e23e4a.jpeg?sign=1805431123-8d5e5e3e2b-0-3b9a21d2d5f25f7db70f0f8b3f75d4e11a7b36cf1e4f5a6b7c8d9e0f1a2b3c4d5',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_e1511acb-7a10-48b6-8f28-0050be6df58a.jpeg?sign=1805433089-c7c3080006-0-c76846e75469ef29c7ec3ca6e1efc8de8e32d290c83d62971d6c23c0283374e0',
     features: [
       '自动焊接生产线',
       '焊缝平整美观',
@@ -72,7 +72,7 @@ const productCategories = [
     name: '不锈钢装饰管',
     icon: <Award className="w-8 h-8" />,
     description: '表面光亮美观，适用于建筑装饰、家具、五金制品等',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_75e8b5c6-9d3e-4f8a-a1b2-c3d4e5f6g7h8.jpeg?sign=1805431123-7c6b5a4e3d-0-9f8e7d6c5b4a3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_1acd5b27-3d82-4218-92b6-11f3476b4a4a.jpeg?sign=1805433088-bd7df8e9d3-0-73066609116aa6c682c608157852eecb637bda44e25abc009ef2b48bb5784db1',
     features: [
       '表面光亮度高',
       '多种表面处理',
@@ -93,7 +93,7 @@ const productCategories = [
     name: '不锈钢管件',
     icon: <Cog className="w-8 h-8" />,
     description: '弯头、三通、法兰等配套管件，满足不同连接需求',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d.jpeg?sign=1805431123-6b5a4e3d2c-0-1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_f1459abe-e44b-4574-aedf-741acc711649.jpeg?sign=1805433088-828b22f188-0-aa79b9f23501e6f67ecfbf3ca4769526e1b75a517b0bfc4eeac11b06d929cc4d',
     features: [
       '种类齐全',
       '精密加工',
@@ -114,7 +114,7 @@ const productCategories = [
     name: '不锈钢流体管',
     icon: <Droplets className="w-8 h-8" />,
     description: '专用于给排水、排污、换热器等流体输送系统',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c.jpeg?sign=1805431123-5a4e3d2c1b-0-2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_8e1dfdd6-18ea-4c9c-8687-e97edc0f4a77.jpeg?sign=1805433088-7a65a164da-0-617fec6fbdf4917795197061be502e90881ea1ec19ddd6f17d8820efc865461b',
     features: [
       '流体阻力小',
       '耐腐蚀性强',
@@ -135,7 +135,7 @@ const productCategories = [
     name: '特种不锈钢管',
     icon: <Shield className="w-8 h-8" />,
     description: '双相钢、镍基合金等特种材质，满足苛刻工况需求',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b.jpeg?sign=1805431123-4e3d2c1b0a-0-3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_797fe543-72d1-45ca-a446-846a804a4844.jpeg?sign=1805433088-ad8e0a302f-0-1169e3e338dd737e4811892f53907f74b941bd27330cdac4dfea4cc5889af493',
     features: [
       '特殊材质',
       '极端环境适用',
@@ -161,7 +161,7 @@ export default function ProductsPage() {
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499"
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_04d86004-0989-4fe1-a947-68f90622c976.jpeg?sign=1805431123-b3089ca052-0-fdc0e12c06a7381ef715b4d0293ccd849a8f7b120ba8dd6b4c0a39c8418963c5"
             alt="产品背景"
             fill
             className="object-cover opacity-10"
