@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import Image from 'next/image';
 import {
   Menu,
   X,
@@ -158,7 +159,7 @@ export default function Home() {
                 <Factory className="w-5 h-5 text-white" />
               </div>
               <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                鑫钢不锈钢
+                嘉钰不锈钢
               </span>
             </div>
 
@@ -211,8 +212,23 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section 
+        id="hero" 
+        className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      >
+        {/* Background Image */}
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_e96710a8-e90a-4481-a19b-08f6b671ef7c.jpeg?sign=1805427034-ab19cfd1f8-0-6a5d97557e93df87013968b7933352d3782afebbc43fcf6ff3a55f1fece78e3b"
+            alt="背景"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/70 to-white"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto relative">
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full text-blue-600 text-sm font-medium mb-6">
               <Zap className="w-4 h-4 mr-2" />
@@ -267,7 +283,7 @@ export default function Home() {
                 关于我们
               </h2>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                鑫钢不锈钢是一家集不锈钢管研发、生产、销售于一体的现代化企业，拥有先进的不锈钢管生产线和完善的检测设备。公司位于中国不锈钢产业基地，地理位置优越，交通便利。
+                嘉钰不锈钢是一家集不锈钢管研发、生产、销售于一体的现代化企业，拥有先进的不锈钢管生产线和完善的检测设备。公司位于中国不锈钢产业基地，地理位置优越，交通便利。
               </p>
               <p className="text-slate-600 mb-8 leading-relaxed">
                 产品严格按照中国GB、美国ASTM、日本JIS等国际标准组织生产，广泛应用于石油化工、食品卫生、医疗器械、建筑装饰、汽车配件等领域。
@@ -285,17 +301,18 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                    <Award className="w-12 h-12 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                    品质为先
-                  </h3>
-                  <p className="text-slate-600">
-                    ISO9001质量管理体系认证企业
-                  </p>
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_8bdf882b-89bb-4b55-b8c6-b6e8bdbc78c4.jpeg?sign=1805427035-38d8d73ce3-0-327cf2a481d2d099cbebcccac4d4d4e6785bf871faa34805aba2c72c7f590858"
+                  alt="现代化生产工厂"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center shadow-xl">
+                <div className="text-center text-white">
+                  <div className="text-2xl font-bold">20年</div>
+                  <div className="text-xs">行业经验</div>
                 </div>
               </div>
             </div>
@@ -304,7 +321,17 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="products" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499"
+            alt="产品背景"
+            fill
+            className="object-cover opacity-10"
+          />
+        </div>
+
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -319,7 +346,7 @@ export default function Home() {
             {products.map((product, index) => (
               <Card
                 key={index}
-                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur"
+                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white/90 backdrop-blur"
               >
                 <CardContent className="p-6">
                   <div className="w-14 h-14 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl flex items-center justify-center mb-4 text-blue-600">
@@ -385,15 +412,21 @@ export default function Home() {
                 key={index}
                 className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center">
-                    <Factory className="w-8 h-8 text-white" />
+                <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499"
+                    alt={caseItem.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <span className="px-3 py-1 bg-blue-600 text-white text-xs rounded-full">
+                      {caseItem.category}
+                    </span>
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <div className="text-sm text-blue-600 font-medium mb-2">
-                    {caseItem.category}
-                  </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2">
                     {caseItem.title}
                   </h3>
@@ -451,7 +484,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">电子邮箱</h4>
-                    <p className="text-slate-600">sales@xingangbxg.com</p>
+                    <p className="text-slate-600">sales@jiayubxg.com</p>
                   </div>
                 </div>
               </div>
@@ -494,7 +527,7 @@ export default function Home() {
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
                   <Factory className="w-5 h-5 text-white" />
                 </div>
-                <span className="font-bold text-xl">鑫钢不锈钢</span>
+                <span className="font-bold text-xl">嘉钰不锈钢</span>
               </div>
               <p className="text-slate-400 text-sm">
                 专业不锈钢管生产厂家，品质值得信赖
@@ -528,14 +561,14 @@ export default function Home() {
               <h4 className="font-bold mb-4">联系方式</h4>
               <ul className="space-y-2 text-slate-400 text-sm">
                 <li>电话：400-888-6688</li>
-                <li>邮箱：sales@xingangbxg.com</li>
+                <li>邮箱：sales@jiayubxg.com</li>
                 <li>地址：广东佛山顺德</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400 text-sm">
-            <p>© 2024 鑫钢不锈钢 版权所有 | 粤ICP备XXXXXXXX号</p>
+            <p>© 2024 嘉钰不锈钢 版权所有 | 粤ICP备XXXXXXXX号</p>
           </div>
         </div>
       </footer>
