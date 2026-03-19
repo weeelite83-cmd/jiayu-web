@@ -107,7 +107,7 @@ const applications = [
     icon: <Car className="w-8 h-8" />,
     title: '汽车配件',
     description: '为汽车制造提供高品质不锈钢管材',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_62f38aea-4a34-4580-b785-4c2fe3624f29.jpeg?sign=1805431346-ebc27063ab-0-262ac72b91627f066d9de59a00de062ec018595286ebea63fa33d2d25274be40',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_62b403b7-3763-415e-8283-03b0b1c63fd7.jpeg?sign=1805437291-8a6b848a06-0-3fe1452a049d9a696783713db1e3ad05166e948bab5d283f1ff06c2ed8c3cae5',
     features: [
       '耐高温性能优异',
       '抗疲劳强度高',
