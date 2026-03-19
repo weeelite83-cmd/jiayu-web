@@ -31,7 +31,7 @@ const applications = [
     icon: <Factory className="w-8 h-8" />,
     title: '石油化工',
     description: '为石油化工行业提供耐腐蚀、耐高压的不锈钢管道系统',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_c5cffeb9-8bbc-4bbc-940c-d0b7990f0ff0.jpeg?sign=1805431347-2aca693611-0-69e7b4a78d30c9d28f9ed9a0d29a2d5371285d06f968dc90c9d5281d856d6842',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_bf130214-8d20-4151-a31a-801a5a417447.jpeg?sign=1805436932-95f58d8177-0-e70bdb40866c3e066634e3e8554694da34e16a2fced9a290013588ed7ba6e4ca',
     features: [
       '耐腐蚀性能优异，适应酸性环境',
       '高压承受能力，安全可靠',
