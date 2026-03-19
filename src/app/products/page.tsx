@@ -30,7 +30,7 @@ const productCategories = [
     name: '不锈钢无缝管',
     icon: <Layers className="w-8 h-8" />,
     description: '采用先进冷轧工艺，高精度、高光洁度，适用于高压、高温环境',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_04d86004-0989-4fe1-a947-68f90622c976.jpeg?sign=1805431123-b3089ca052-0-fdc0e12c06a7381ef715b4d0293ccd849a8f7b120ba8dd6b4c0a39c8418963c5',
     features: [
       '冷轧/冷拔工艺生产',
       '内外表面光洁度高',
@@ -51,7 +51,7 @@ const productCategories = [
     name: '不锈钢焊管',
     icon: <Factory className="w-8 h-8" />,
     description: '精密焊接工艺，规格齐全，广泛应用于流体输送和装饰领域',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_c2c85c8a-435c-4c04-bbe5-9a6e06e23e4a.jpeg?sign=1805431123-8d5e5e3e2b-0-3b9a21d2d5f25f7db70f0f8b3f75d4e11a7b36cf1e4f5a6b7c8d9e0f1a2b3c4d5',
     features: [
       '自动焊接生产线',
       '焊缝平整美观',
@@ -72,7 +72,7 @@ const productCategories = [
     name: '不锈钢装饰管',
     icon: <Award className="w-8 h-8" />,
     description: '表面光亮美观，适用于建筑装饰、家具、五金制品等',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_75e8b5c6-9d3e-4f8a-a1b2-c3d4e5f6g7h8.jpeg?sign=1805431123-7c6b5a4e3d-0-9f8e7d6c5b4a3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8',
     features: [
       '表面光亮度高',
       '多种表面处理',
@@ -93,7 +93,7 @@ const productCategories = [
     name: '不锈钢管件',
     icon: <Cog className="w-8 h-8" />,
     description: '弯头、三通、法兰等配套管件，满足不同连接需求',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d.jpeg?sign=1805431123-6b5a4e3d2c-0-1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2',
     features: [
       '种类齐全',
       '精密加工',
@@ -114,7 +114,7 @@ const productCategories = [
     name: '不锈钢流体管',
     icon: <Droplets className="w-8 h-8" />,
     description: '专用于给排水、排污、换热器等流体输送系统',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c.jpeg?sign=1805431123-5a4e3d2c1b-0-2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2',
     features: [
       '流体阻力小',
       '耐腐蚀性强',
@@ -135,7 +135,7 @@ const productCategories = [
     name: '特种不锈钢管',
     icon: <Shield className="w-8 h-8" />,
     description: '双相钢、镍基合金等特种材质，满足苛刻工况需求',
-    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_97d25d4b-4d91-4c50-b79a-8e5c2f8678fb.jpeg?sign=1805427031-c59d2e58b6-0-b633540b4876d0ba3e0f2f68a1c071ab0afb9944d173f08f836ffd3fb80d8499',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b.jpeg?sign=1805431123-4e3d2c1b0a-0-3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4',
     features: [
       '特殊材质',
       '极端环境适用',

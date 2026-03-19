@@ -31,6 +31,7 @@ const applications = [
     icon: <Factory className="w-8 h-8" />,
     title: '石油化工',
     description: '为石油化工行业提供耐腐蚀、耐高压的不锈钢管道系统',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_c5cffeb9-8bbc-4bbc-940c-d0b7990f0ff0.jpeg?sign=1805431347-2aca693611-0-69e7b4a78d30c9d28f9ed9a0d29a2d5371285d06f968dc90c9d5281d856d6842',
     features: [
       '耐腐蚀性能优异，适应酸性环境',
       '高压承受能力，安全可靠',
@@ -49,6 +50,7 @@ const applications = [
     icon: <UtensilsCrossed className="w-8 h-8" />,
     title: '食品卫生',
     description: '符合食品级标准的不锈钢管，确保食品安全',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_a7a578dc-90da-42b0-8ee6-2dedab6cfa7d.jpeg?sign=1805431347-10063013f6-0-060e9451af37ef4246aa505e73d80d00e0eb49bb6f046703480581c253f3d7e9',
     features: [
       '符合FDA、GB食品级标准',
       '表面光洁度高，易清洁',
@@ -67,6 +69,7 @@ const applications = [
     icon: <Shield className="w-8 h-8" />,
     title: '医疗器械',
     description: '为医疗器械行业提供高精度、高品质的不锈钢管材',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_8461ef6a-2441-4151-8599-a5a049986d97.jpeg?sign=1805431345-3a08eb6544-0-96632c85f4b1ccd64b9f4b0a0f111e69c3eb24e548ec26aff85ec9cb580e1948',
     features: [
       '医疗级标准，安全可靠',
       '高精度尺寸控制',
@@ -85,6 +88,7 @@ const applications = [
     icon: <Building2 className="w-8 h-8" />,
     title: '建筑装饰',
     description: '美观耐用的不锈钢装饰管，提升建筑品质',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_b3389da5-9463-4e39-918e-f92228bed75e.jpeg?sign=1805431347-69e64edad1-0-c493d7b060b0282c7b75da129536b8900eb9a1aeae0bbb993bb843b3f739ca15',
     features: [
       '表面光亮美观',
       '多种表面处理可选',
@@ -103,6 +107,7 @@ const applications = [
     icon: <Car className="w-8 h-8" />,
     title: '汽车配件',
     description: '为汽车制造提供高品质不锈钢管材',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_62f38aea-4a34-4580-b785-4c2fe3624f29.jpeg?sign=1805431346-ebc27063ab-0-262ac72b91627f066d9de59a00de062ec018595286ebea63fa33d2d25274be40',
     features: [
       '耐高温性能优异',
       '抗疲劳强度高',
@@ -121,6 +126,7 @@ const applications = [
     icon: <Droplets className="w-8 h-8" />,
     title: '换热器',
     description: '高效换热管，耐腐蚀传热性能优异',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_4232732e-2cca-4316-9b65-1aa9c7608c82.jpeg?sign=1805431347-141d2034d4-0-d3f084071c333f6501be70fcd51cb82d89ae09091ac40d1406043eb43040e3cc',
     features: [
       '导热性能优异',
       '耐腐蚀性强',
@@ -139,6 +145,7 @@ const applications = [
     icon: <FlaskConical className="w-8 h-8" />,
     title: '制药行业',
     description: '符合GMP标准的制药级不锈钢管道系统',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_6d8f1102-945e-4056-84e2-328f341ee733.jpeg?sign=1805431347-f01620f7be-0-3f9e9bfa5e15a9228f18dca7e3e21b725c9419f5d981ef2185a155423538381a',
     features: [
       '符合GMP制药标准',
       '无死角设计',
@@ -157,6 +164,7 @@ const applications = [
     icon: <Zap className="w-8 h-8" />,
     title: '新能源',
     description: '为新能源行业提供专用不锈钢管道解决方案',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_f9780cb0-d338-47fe-8cb8-cc20756d541d.jpeg?sign=1805431346-3309bd8030-0-9f34ad45045f7d2a0732483020e87023c62c79b46831f4733ba2baba5a0ef888',
     features: [
       '适应极端环境',
       '高可靠性',
@@ -282,13 +290,20 @@ export default function ApplicationsPage() {
               </div>
 
               <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                <div className="aspect-square bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center sticky top-32">
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white">
+                <div className="aspect-square rounded-2xl overflow-hidden sticky top-32 shadow-lg">
+                  <Image
+                    src={app.image}
+                    alt={app.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl mb-4 flex items-center justify-center">
                       {app.icon}
                     </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">{app.title}</h3>
-                    <p className="text-slate-600">{app.description}</p>
+                    <h3 className="text-2xl font-bold mb-2">{app.title}</h3>
+                    <p className="text-white/80 text-sm">{app.description}</p>
                   </div>
                 </div>
               </div>

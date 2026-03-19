@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -55,6 +56,7 @@ const departments = [
     phone: '0757-2388-8888',
     email: 'sales@jiayubxg.com',
     wechat: 'jiayu_sales',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_07033f94-65d4-474e-a78d-86dbe7413da7.jpeg?sign=1805431439-25ed60b79c-0-43479fed9d7f8510ee161a7844dc96bac80da790569213b5d21b1d979f2bc21f',
   },
   {
     icon: <Globe className="w-6 h-6" />,
@@ -62,6 +64,7 @@ const departments = [
     phone: '0757-2388-8889',
     email: 'export@jiayubxg.com',
     wechat: 'jiayu_export',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_07033f94-65d4-474e-a78d-86dbe7413da7.jpeg?sign=1805431439-25ed60b79c-0-43479fed9d7f8510ee161a7844dc96bac80da790569213b5d21b1d979f2bc21f',
   },
   {
     icon: <Users className="w-6 h-6" />,
@@ -69,6 +72,7 @@ const departments = [
     phone: '400-888-6688',
     email: 'service@jiayubxg.com',
     wechat: 'jiayu_service',
+    image: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_4a366e24-53db-4eb7-83da-e8d804477667.jpeg?sign=1805431442-a25598d64b-0-1ada9d87995ae03d959281f4214ec8ad138bcd5e964dca20f946e87ba60ced79',
   },
 ];
 
@@ -124,7 +128,14 @@ export default function ContactPage() {
       <Navbar />
       {/* Hero */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-blue-600/10 to-cyan-600/10"></div>
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_c6667f74-528f-40e7-a1dd-d9d66b6dc54e.jpeg?sign=1805431440-70c1911255-0-38878646e7bbc8ff5687c446098b00e04d286819473a97039acb06725cb6ea48"
+            alt="公司外观"
+            fill
+            className="object-cover opacity-10"
+          />
+        </div>
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full text-blue-600 text-sm font-medium mb-6">
@@ -280,12 +291,19 @@ export default function ContactPage() {
               <p className="text-slate-600 mb-8">
                 欢迎来厂参观考察，我们将安排专车接送
               </p>
-              <div className="aspect-square bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <MapPin className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">嘉钰不锈钢</h3>
-                  <p className="text-slate-600 mb-4">广东省佛山市顺德区陈村不锈钢市场</p>
-                  <Button variant="outline" className="text-blue-600">
+              <div className="aspect-square rounded-2xl overflow-hidden relative">
+                <Image
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_4a366e24-53db-4eb7-83da-e8d804477667.jpeg?sign=1805431442-a25598d64b-0-1ada9d87995ae03d959281f4214ec8ad138bcd5e964dca20f946e87ba60ced79"
+                  alt="客服团队"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <MapPin className="w-12 h-12 text-white mb-4" />
+                  <h3 className="text-xl font-bold mb-2">嘉钰不锈钢</h3>
+                  <p className="text-white/80 mb-4">广东省佛山市顺德区陈村不锈钢市场</p>
+                  <Button variant="outline" className="text-white border-white hover:bg-white/20">
                     获取导航路线
                   </Button>
                 </div>
@@ -304,14 +322,23 @@ export default function ContactPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {departments.map((dept, index) => (
-              <Card key={index} className="border-0 shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center text-white">
+              <Card key={index} className="border-0 shadow-lg overflow-hidden">
+                <div className="relative h-32">
+                  <Image
+                    src={dept.image}
+                    alt={dept.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-4 left-4 flex items-center space-x-3 text-white">
+                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
                       {dept.icon}
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900">{dept.title}</h3>
+                    <h3 className="text-xl font-bold">{dept.title}</h3>
                   </div>
+                </div>
+                <CardContent className="p-6">
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3 text-slate-600">
                       <Phone className="w-4 h-4" />
