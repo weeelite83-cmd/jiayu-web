@@ -4,30 +4,31 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'TechEdge | 科技驱动未来',
-    template: '%s | TechEdge',
+    default: '鑫钢不锈钢 | 专业不锈钢管生产厂家',
+    template: '%s | 鑫钢不锈钢',
   },
   description:
-    'TechEdge是一家专注于企业数字化转型的科技公司，提供全方位的数字化解决方案，助力企业在数字经济时代实现跨越式发展。',
+    '鑫钢不锈钢是一家集不锈钢管研发、生产、销售于一体的现代化企业，产品涵盖无缝管、焊管、装饰管、管件等全系列，广泛应用于石油化工、食品卫生、医疗器械、建筑装饰等领域。',
   keywords: [
-    '数字化转型',
-    '企业服务',
-    '科技创新',
-    '战略咨询',
-    '数据分析',
-    '系统集成',
+    '不锈钢管',
+    '不锈钢无缝管',
+    '不锈钢焊管',
+    '不锈钢装饰管',
+    '不锈钢管件',
+    '不锈钢管厂家',
+    '不锈钢管价格',
   ],
-  authors: [{ name: 'TechEdge Team', url: 'https://techedge.com' }],
+  authors: [{ name: '鑫钢不锈钢', url: 'https://xingangbxg.com' }],
   generator: 'Next.js',
   // icons: {
   //   icon: '',
   // },
   openGraph: {
-    title: 'TechEdge | 科技驱动未来',
+    title: '鑫钢不锈钢 | 专业不锈钢管生产厂家',
     description:
-      '专注企业数字化转型，提供全方位数字化解决方案',
-    url: 'https://techedge.com',
-    siteName: 'TechEdge',
+      '集研发、生产、销售于一体的不锈钢管专业制造商，产品涵盖无缝管、焊管、装饰管、管件等全系列',
+    url: 'https://xingangbxg.com',
+    siteName: '鑫钢不锈钢',
     locale: 'zh_CN',
     type: 'website',
   },

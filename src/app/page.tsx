@@ -8,17 +8,21 @@ import { Textarea } from '@/components/ui/textarea';
 import {
   Menu,
   X,
-  Rocket,
-  Lightbulb,
+  Factory,
+  Award,
   Target,
   Users,
-  TrendingUp,
+  Globe,
   Shield,
   Zap,
   Mail,
   Phone,
   MapPin,
   ArrowRight,
+  CheckCircle,
+  Layers,
+  Cog,
+  Droplets,
 } from 'lucide-react';
 
 export default function Home() {
@@ -27,59 +31,119 @@ export default function Home() {
   const navItems = [
     { name: '首页', href: '#hero' },
     { name: '关于我们', href: '#about' },
-    { name: '服务', href: '#services' },
-    { name: '案例', href: '#cases' },
-    { name: '联系', href: '#contact' },
+    { name: '产品中心', href: '#products' },
+    { name: '应用领域', href: '#applications' },
+    { name: '联系我们', href: '#contact' },
   ];
 
-  const services = [
+  const products = [
     {
-      icon: <Rocket className="w-8 h-8" />,
-      title: '数字化转型',
-      description: '帮助企业实现数字化升级，提升运营效率',
+      icon: <Layers className="w-8 h-8" />,
+      title: '不锈钢无缝管',
+      description: '采用先进冷轧工艺，高精度、高光洁度，适用于高压、高温环境',
     },
     {
-      icon: <Lightbulb className="w-8 h-8" />,
-      title: '创新研发',
-      description: '前沿技术研究与产品创新开发',
+      icon: <Factory className="w-8 h-8" />,
+      title: '不锈钢焊管',
+      description: '精密焊接工艺，规格齐全，广泛应用于流体输送和装饰领域',
     },
     {
-      icon: <Target className="w-8 h-8" />,
-      title: '战略咨询',
-      description: '提供专业的企业发展战略规划服务',
+      icon: <Award className="w-8 h-8" />,
+      title: '不锈钢装饰管',
+      description: '表面光亮美观，适用于建筑装饰、家具、五金制品等',
+    },
+    {
+      icon: <Cog className="w-8 h-8" />,
+      title: '不锈钢管件',
+      description: '弯头、三通、法兰等配套管件，满足不同连接需求',
+    },
+    {
+      icon: <Droplets className="w-8 h-8" />,
+      title: '不锈钢流体管',
+      description: '专用于给排水、排污、换热器等流体输送系统',
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: '安全服务',
-      description: '网络安全评估与数据保护解决方案',
+      title: '特种不锈钢管',
+      description: '双相钢、镍基合金等特种材质，满足苛刻工况需求',
+    },
+  ];
+
+  const applications = [
+    {
+      title: '石油化工',
+      icon: <Factory className="w-6 h-6" />,
+      description: '耐腐蚀、耐高压管道系统',
     },
     {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: '数据分析',
-      description: '大数据分析与商业智能决策支持',
+      title: '食品卫生',
+      icon: <CheckCircle className="w-6 h-6" />,
+      description: '符合食品级标准，卫生安全',
     },
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: '系统集成',
-      description: '企业级系统架构设计与集成服务',
+      title: '医疗器械',
+      icon: <Shield className="w-6 h-6" />,
+      description: '医疗设备、手术器械专用管材',
+    },
+    {
+      title: '建筑装饰',
+      icon: <Globe className="w-6 h-6" />,
+      description: '栏杆、门窗、装饰构件',
+    },
+    {
+      title: '汽车配件',
+      icon: <Cog className="w-6 h-6" />,
+      description: '排气系统、结构件等',
+    },
+    {
+      title: '换热器',
+      icon: <Droplets className="w-6 h-6" />,
+      description: '高效换热管，耐腐蚀传热',
+    },
+  ];
+
+  const advantages = [
+    {
+      title: '耐腐蚀',
+      description: '优异的抗腐蚀性能，适应多种恶劣环境',
+    },
+    {
+      title: '高强度',
+      description: '机械性能优越，承载能力强',
+    },
+    {
+      title: '寿命长',
+      description: '使用寿命长，维护成本低',
+    },
+    {
+      title: '易清洁',
+      description: '表面光滑，易于清洁和维护',
+    },
+    {
+      title: '环保可回收',
+      description: '100%可回收，绿色环保',
+    },
+    {
+      title: '国际标准',
+      description: '符合GB、ASTM、JIS等国际标准',
     },
   ];
 
   const cases = [
     {
-      title: '智慧城市解决方案',
-      category: '数字化转型',
-      description: '为某市政府打造智慧城市管理平台',
+      title: '大型石化企业',
+      category: '石油化工',
+      description: '为中石油某分公司提供高压无缝管，年供应量达5000吨',
     },
     {
-      title: '金融科技创新平台',
-      category: '创新研发',
-      description: '为金融机构构建数字化服务体系',
+      title: '食品级管道系统',
+      category: '食品卫生',
+      description: '为知名乳制品企业供应食品级不锈钢管，确保生产安全',
     },
     {
-      title: '企业级数据分析平台',
-      category: '数据分析',
-      description: '助力企业实现数据驱动决策',
+      title: '医疗器械配套',
+      category: '医疗领域',
+      description: '为医疗器械厂商提供精密不锈钢管，品质达到医疗级标准',
     },
   ];
 
@@ -90,11 +154,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">TE</span>
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
+                <Factory className="w-5 h-5 text-white" />
               </div>
-              <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                TechEdge
+              <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                鑫钢不锈钢
               </span>
             </div>
 
@@ -109,8 +173,8 @@ export default function Home() {
                   {item.name}
                 </a>
               ))}
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                立即咨询
+              <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
+                获取报价
               </Button>
             </div>
 
@@ -138,8 +202,8 @@ export default function Home() {
                   {item.name}
                 </a>
               ))}
-              <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                立即咨询
+              <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
+                获取报价
               </Button>
             </div>
           </div>
@@ -152,25 +216,25 @@ export default function Home() {
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full text-blue-600 text-sm font-medium mb-6">
               <Zap className="w-4 h-4 mr-2" />
-              引领数字化转型新时代
+              专业不锈钢管生产厂家 · 品质保障
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-              科技驱动未来
+              专注不锈钢管制造
               <br />
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                创新成就卓越
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                品质铸就未来
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto mb-8">
-              我们致力于为企业提供全方位的数字化解决方案，助力企业在数字经济时代实现跨越式发展
+              集研发、生产、销售于一体的不锈钢管专业制造商，产品涵盖无缝管、焊管、装饰管、管件等全系列产品，服务全球客户
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base">
-                开始合作
+              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-base">
+                立即咨询
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button size="lg" variant="outline" className="text-base">
-                了解更多
+                产品目录
               </Button>
             </div>
           </div>
@@ -178,13 +242,13 @@ export default function Home() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
             {[
-              { value: '500+', label: '服务客户' },
-              { value: '98%', label: '客户满意度' },
-              { value: '50+', label: '技术专家' },
-              { value: '10年', label: '行业经验' },
+              { value: '20年', label: '行业经验' },
+              { value: '1000+', label: '合作客户' },
+              { value: '50000吨', label: '年产能' },
+              { value: '50+', label: '出口国家' },
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
                   {stat.value}
                 </div>
                 <div className="text-slate-600 text-sm">{stat.label}</div>
@@ -203,37 +267,34 @@ export default function Home() {
                 关于我们
               </h2>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                TechEdge是一家专注于企业数字化转型的科技公司，拥有超过10年的行业经验。我们的团队由资深技术专家和行业顾问组成，致力于为客户提供最优质的服务。
+                鑫钢不锈钢是一家集不锈钢管研发、生产、销售于一体的现代化企业，拥有先进的不锈钢管生产线和完善的检测设备。公司位于中国不锈钢产业基地，地理位置优越，交通便利。
               </p>
               <p className="text-slate-600 mb-8 leading-relaxed">
-                我们秉承"创新驱动、客户至上"的理念，已成功为500+企业提供了数字化解决方案，帮助客户实现业务增长和效率提升。
+                产品严格按照中国GB、美国ASTM、日本JIS等国际标准组织生产，广泛应用于石油化工、食品卫生、医疗器械、建筑装饰、汽车配件等领域。
               </p>
-              <div className="space-y-4">
-                {[
-                  { icon: <Users className="w-5 h-5" />, text: '专业团队，丰富经验' },
-                  { icon: <Target className="w-5 h-5" />, text: '精准定位，定制方案' },
-                  { icon: <Shield className="w-5 h-5" />, text: '安全可靠，品质保障' },
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center text-slate-700">
-                    <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-4 text-blue-600">
-                      {item.icon}
+              <div className="grid grid-cols-2 gap-4">
+                {advantages.map((item, index) => (
+                  <div key={index} className="flex items-start space-x-2">
+                    <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <div className="font-medium text-slate-900 text-sm">{item.title}</div>
+                      <div className="text-slate-500 text-xs">{item.description}</div>
                     </div>
-                    <span className="font-medium">{item.text}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center">
+              <div className="aspect-square bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                    <Rocket className="w-12 h-12 text-white" />
+                  <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                    <Award className="w-12 h-12 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                    科技赋能企业
+                    品质为先
                   </h3>
                   <p className="text-slate-600">
-                    以技术创新为核心，推动企业数字化转型
+                    ISO9001质量管理体系认证企业
                   </p>
                 </div>
               </div>
@@ -242,32 +303,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* Products Section */}
+      <section id="products" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-              我们的服务
+              产品中心
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              提供全方位的数字化解决方案，满足企业不同阶段的发展需求
+              全系列不锈钢管产品，涵盖工业、装饰、流体输送等多个应用场景
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, index) => (
+            {products.map((product, index) => (
               <Card
                 key={index}
                 className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur"
               >
                 <CardContent className="p-6">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl flex items-center justify-center mb-4 text-blue-600">
-                    {service.icon}
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl flex items-center justify-center mb-4 text-blue-600">
+                    {product.icon}
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2">
-                    {service.title}
+                    {product.title}
                   </h3>
-                  <p className="text-slate-600">{service.description}</p>
+                  <p className="text-slate-600">{product.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -275,15 +336,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cases Section */}
-      <section id="cases" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* Applications Section */}
+      <section id="applications" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-              成功案例
+              应用领域
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              我们的解决方案已帮助众多企业实现数字化转型
+              产品广泛应用于多个行业领域，满足不同客户的多样化需求
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {applications.map((app, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-6 hover:shadow-lg transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center mb-4 text-white">
+                  {app.icon}
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">
+                  {app.title}
+                </h3>
+                <p className="text-slate-600 text-sm">{app.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cases Section */}
+      <section id="cases" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+              合作案例
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              已为全球1000+企业提供优质不锈钢管产品和服务
             </p>
           </div>
 
@@ -293,9 +385,9 @@ export default function Home() {
                 key={index}
                 className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                    <Rocket className="w-8 h-8 text-white" />
+                <div className="h-48 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center">
+                    <Factory className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -318,7 +410,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
@@ -326,7 +418,7 @@ export default function Home() {
                 联系我们
               </h2>
               <p className="text-slate-600 mb-8">
-                期待与您的合作，共同开启数字化转型之旅
+                专业团队为您提供一对一服务，期待与您的合作
               </p>
 
               <div className="space-y-6">
@@ -337,7 +429,7 @@ export default function Home() {
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">公司地址</h4>
                     <p className="text-slate-600">
-                      北京市朝阳区科技园区A座1001
+                      广东省佛山市顺德区陈村不锈钢市场
                     </p>
                   </div>
                 </div>
@@ -348,7 +440,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">联系电话</h4>
-                    <p className="text-slate-600">400-123-4567</p>
+                    <p className="text-slate-600">400-888-6688</p>
+                    <p className="text-slate-500 text-sm">全国统一服务热线</p>
                   </div>
                 </div>
 
@@ -358,7 +451,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">电子邮箱</h4>
-                    <p className="text-slate-600">contact@techedge.com</p>
+                    <p className="text-slate-600">sales@xingangbxg.com</p>
                   </div>
                 </div>
               </div>
@@ -367,23 +460,23 @@ export default function Home() {
             <Card className="border-0 shadow-xl bg-white/80 backdrop-blur">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-slate-900 mb-6">
-                  发送消息
+                  在线询价
                 </h3>
                 <form className="space-y-4">
                   <div>
                     <Input placeholder="您的姓名" className="h-12" />
                   </div>
                   <div>
-                    <Input placeholder="电子邮箱" type="email" className="h-12" />
-                  </div>
-                  <div>
                     <Input placeholder="联系电话" className="h-12" />
                   </div>
                   <div>
-                    <Textarea placeholder="您的留言" rows={4} />
+                    <Input placeholder="所需产品规格" className="h-12" />
                   </div>
-                  <Button className="w-full h-12 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                    发送消息
+                  <div>
+                    <Textarea placeholder="详细需求（材质、规格、数量等）" rows={4} />
+                  </div>
+                  <Button className="w-full h-12 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
+                    提交询价
                   </Button>
                 </form>
               </CardContent>
@@ -398,13 +491,13 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">TE</span>
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
+                  <Factory className="w-5 h-5 text-white" />
                 </div>
-                <span className="font-bold text-xl">TechEdge</span>
+                <span className="font-bold text-xl">鑫钢不锈钢</span>
               </div>
               <p className="text-slate-400 text-sm">
-                引领企业数字化转型，共创科技未来
+                专业不锈钢管生产厂家，品质值得信赖
               </p>
             </div>
 
@@ -422,30 +515,27 @@ export default function Home() {
             </div>
 
             <div>
-              <h4 className="font-bold mb-4">服务项目</h4>
+              <h4 className="font-bold mb-4">产品分类</h4>
               <ul className="space-y-2 text-slate-400 text-sm">
-                <li>数字化转型</li>
-                <li>创新研发</li>
-                <li>战略咨询</li>
-                <li>安全服务</li>
+                <li>不锈钢无缝管</li>
+                <li>不锈钢焊管</li>
+                <li>不锈钢装饰管</li>
+                <li>不锈钢管件</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold mb-4">关注我们</h4>
-              <div className="flex space-x-3">
-                <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
-                  <Users className="w-5 h-5" />
-                </div>
-                <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors cursor-pointer">
-                  <Mail className="w-5 h-5" />
-                </div>
-              </div>
+              <h4 className="font-bold mb-4">联系方式</h4>
+              <ul className="space-y-2 text-slate-400 text-sm">
+                <li>电话：400-888-6688</li>
+                <li>邮箱：sales@xingangbxg.com</li>
+                <li>地址：广东佛山顺德</li>
+              </ul>
             </div>
           </div>
 
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400 text-sm">
-            <p>© 2024 TechEdge. All rights reserved.</p>
+            <p>© 2024 鑫钢不锈钢 版权所有 | 粤ICP备XXXXXXXX号</p>
           </div>
         </div>
       </footer>
