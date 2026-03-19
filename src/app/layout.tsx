@@ -4,44 +4,32 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: '新应用 | 扣子编程',
-    template: '%s | 扣子编程',
+    default: 'TechEdge | 科技驱动未来',
+    template: '%s | TechEdge',
   },
   description:
-    '扣子编程是一款一站式云端 Vibe Coding 开发平台。通过对话轻松构建智能体、工作流和网站，实现从创意到上线的无缝衔接。',
+    'TechEdge是一家专注于企业数字化转型的科技公司，提供全方位的数字化解决方案，助力企业在数字经济时代实现跨越式发展。',
   keywords: [
-    '扣子编程',
-    'Coze Code',
-    'Vibe Coding',
-    'AI 编程',
-    '智能体搭建',
-    '工作流搭建',
-    '网站搭建',
-    '网站部署',
-    '全栈开发',
-    'AI 工程师',
+    '数字化转型',
+    '企业服务',
+    '科技创新',
+    '战略咨询',
+    '数据分析',
+    '系统集成',
   ],
-  authors: [{ name: 'Coze Code Team', url: 'https://code.coze.cn' }],
-  generator: 'Coze Code',
+  authors: [{ name: 'TechEdge Team', url: 'https://techedge.com' }],
+  generator: 'Next.js',
   // icons: {
   //   icon: '',
   // },
   openGraph: {
-    title: '扣子编程 | 你的 AI 工程师已就位',
+    title: 'TechEdge | 科技驱动未来',
     description:
-      '我正在使用扣子编程 Vibe Coding，让创意瞬间上线。告别拖拽，拥抱心流。',
-    url: 'https://code.coze.cn',
-    siteName: '扣子编程',
+      '专注企业数字化转型，提供全方位数字化解决方案',
+    url: 'https://techedge.com',
+    siteName: 'TechEdge',
     locale: 'zh_CN',
     type: 'website',
-    // images: [
-    //   {
-    //     url: '',
-    //     width: 1200,
-    //     height: 630,
-    //     alt: '扣子编程 - 你的 AI 工程师',
-    //   },
-    // ],
   },
   // twitter: {
   //   card: 'summary_large_image',
