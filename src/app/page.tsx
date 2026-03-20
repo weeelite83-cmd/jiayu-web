@@ -182,7 +182,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_365d7bb3-9836-491c-a674-36b913fd0563.jpeg?sign=1805509303-dcd995fcf5-0-8a66783b0033e698bb4177f43c43953ef42dbe6cb228af8e7349b6555fcb0f43"
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_61923002-2101-4ef8-8b03-9ebb1ec67910.jpeg?sign=1805509367-fd8722b4d4-0-a674b5071c899953144717bd232707aee4c6f16a09117c72694a25836fa35cf1"
                   alt="嘉钰不锈钢工厂"
                   fill
                   className="object-cover"
