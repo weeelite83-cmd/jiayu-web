@@ -117,7 +117,7 @@ export default function AboutPage() {
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_61923002-2101-4ef8-8b03-9ebb1ec67910.jpeg?sign=1805509367-fd8722b4d4-0-a674b5071c899953144717bd232707aee4c6f16a09117c72694a25836fa35cf1"
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_51bfd3a2-ad00-4971-aa1e-407ee2f1ffdc.jpeg?sign=1805509421-d4e5102726-0-c151e0722c166365877aba64b6c9cb68c01ad8c325f47b8c7c43f0df75464f22"
             alt="嘉钰不锈钢工厂全景"
             fill
             className="object-cover opacity-10"
@@ -174,7 +174,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_61923002-2101-4ef8-8b03-9ebb1ec67910.jpeg?sign=1805509367-fd8722b4d4-0-a674b5071c899953144717bd232707aee4c6f16a09117c72694a25836fa35cf1"
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_51bfd3a2-ad00-4971-aa1e-407ee2f1ffdc.jpeg?sign=1805509421-d4e5102726-0-c151e0722c166365877aba64b6c9cb68c01ad8c325f47b8c7c43f0df75464f22"
                   alt="嘉钰不锈钢工厂全景"
                   fill
                   className="object-cover"
