@@ -174,7 +174,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_c32b111b-824f-4de8-9aa7-9a5a4eb5eb55.jpeg?sign=1805510325-7c16106da5-0-d27367f6d75fb1664c8b8419e951b6e402d567d48030223399a700746283bc2a"
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_9aa56281-97ac-4660-86ec-f7f81d65ff80.jpeg?sign=1805510488-88baba56a9-0-2e7cfbee7eac90b94bcba5f1f81a242f2ebdf66ccf2a196acfb949068f42a8e7"
                   alt="嘉钰不锈钢车间仓库"
                   fill
                   className="object-cover"
