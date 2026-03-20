@@ -135,7 +135,7 @@ export default function Home() {
             {[
               { value: '20年', label: '行业经验' },
               { value: '1000+', label: '合作客户' },
-              { value: '50000吨', label: '年产能' },
+              { value: '12000吨', label: '年产能' },
               { value: '50+', label: '出口国家' },
             ].map((stat, index) => (
               <div key={index} className="text-center">

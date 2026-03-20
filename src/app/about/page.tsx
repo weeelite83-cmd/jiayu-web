@@ -50,7 +50,7 @@ const timeline = [
   {
     year: '2024',
     title: '行业领先',
-    description: '年产能达50000吨，服务客户超1000家',
+    description: '年产能达12000吨，服务客户超1000家',
   },
 ];
 
@@ -117,8 +117,8 @@ export default function AboutPage() {
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_f11efdc0-5972-4cd5-b6d9-eecf38daf2f8.jpeg?sign=1805436410-987521bc9d-0-9108bf8d6966c74d4094db2891931d069b50e3cba8f760f9cc082e890e95f03e"
-            alt="背景"
+            src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_04dd5c13-7f18-42a8-8412-b6a0303a7d30.jpeg?sign=1805509023-b00b091667-0-42e3ce793787376ff068d5de43e0b452b58a7f53a3c87af66e7a7281038b56f8"
+            alt="嘉钰不锈钢工厂全景"
             fill
             className="object-cover opacity-10"
           />
@@ -167,15 +167,15 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-5 h-5 text-blue-600" />
-                  <span className="text-slate-700">年产能50000吨</span>
+                  <span className="text-slate-700">年产能12000吨</span>
                 </div>
               </div>
             </div>
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_f11efdc0-5972-4cd5-b6d9-eecf38daf2f8.jpeg?sign=1805436410-987521bc9d-0-9108bf8d6966c74d4094db2891931d069b50e3cba8f760f9cc082e890e95f03e"
-                  alt="工厂车间"
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_04dd5c13-7f18-42a8-8412-b6a0303a7d30.jpeg?sign=1805509023-b00b091667-0-42e3ce793787376ff068d5de43e0b452b58a7f53a3c87af66e7a7281038b56f8"
+                  alt="嘉钰不锈钢工厂全景"
                   fill
                   className="object-cover"
                 />
@@ -198,7 +198,7 @@ export default function AboutPage() {
               <div className="text-blue-100">服务客户</div>
             </div>
             <div>
-              <div className="text-5xl font-bold mb-2">50000</div>
+              <div className="text-5xl font-bold mb-2">12000</div>
               <div className="text-blue-100">吨年产能</div>
             </div>
             <div>
