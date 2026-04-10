@@ -23,6 +23,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { useLocale } from 'next-intl';
+import { localeNames, Locale } from '@/i18n/config';
 
 const products = [
   {
@@ -92,7 +93,13 @@ const cases = [
 
 export default function Home() {
   const t = useTranslations();
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
+
+  // Handle locale change
+  const handleLocaleChange = (newLocale: Locale) => {
+    document.cookie = `locale=${newLocale};path=/;max-age=31536000`;
+    window.location.reload();
+  };
 
   // Get navbar translations
   const navTranslations = {
@@ -111,7 +118,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
-      <Navbar locale={locale as any} translations={navTranslations} />
+      <Navbar locale={locale} translations={navTranslations} />
       
       {/* Hero Section */}
       <section id="hero" className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -154,6 +161,29 @@ export default function Home() {
                   {t('home.hero.productCatalog')}
                 </Button>
               </Link>
+            </div>
+            
+            {/* Language Selector */}
+            <div className="mt-8 pt-8 border-t border-slate-200">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Globe className="w-5 h-5 text-slate-500" />
+                <span className="text-sm text-slate-500">Select Language / 选择语言</span>
+              </div>
+              <div className="flex flex-wrap justify-center gap-2">
+                {(['zh', 'en', 'ja', 'ko', 'de', 'fr', 'es', 'pt', 'ru', 'ar', 'it', 'nl', 'pl', 'tr', 'vi', 'th'] as const).map((loc) => (
+                  <button
+                    key={loc}
+                    onClick={() => handleLocaleChange(loc)}
+                    className={`px-3 py-1.5 text-sm rounded-full transition-all ${
+                      locale === loc
+                        ? 'bg-blue-600 text-white shadow-md'
+                        : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
+                    }`}
+                  >
+                    {localeNames[loc]}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
