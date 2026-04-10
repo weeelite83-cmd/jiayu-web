@@ -167,7 +167,7 @@ export default function Home() {
             <div className="mt-8 pt-8 border-t border-slate-200">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <Globe className="w-5 h-5 text-slate-500" />
-                <span className="text-sm text-slate-500">Select Language / 选择语言</span>
+                <span className="text-sm text-slate-500">Select Your Language</span>
               </div>
               <div className="flex flex-wrap justify-center gap-2">
                 {(['zh', 'en', 'ja', 'ko', 'de', 'fr', 'es', 'pt', 'ru', 'ar', 'it', 'nl', 'pl', 'tr', 'vi', 'th'] as const).map((loc) => (

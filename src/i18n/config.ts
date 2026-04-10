@@ -21,4 +21,4 @@ export const localeNames: Record<Locale, string> = {
   th: 'ไทย',
 };
 
-export const defaultLocale: Locale = 'zh';
+export const defaultLocale: Locale = 'en';
