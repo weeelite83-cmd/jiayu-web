@@ -51,7 +51,7 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
           )}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="max-h-80 overflow-y-auto">
+      <DropdownMenuContent align="end">
         {locales.map((locale) => (
           <DropdownMenuItem
             key={locale}

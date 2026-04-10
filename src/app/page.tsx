@@ -283,10 +283,10 @@ export default function Home() {
                     {t(caseItem.categoryKey)}
                   </span>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    {t(`cases.${caseItem.titleKey}` as any)}
+                    {t(`home.cases.${caseItem.titleKey}` as any)}
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    {t(`cases.${caseItem.descKey}` as any)}
+                    {t(`home.cases.${caseItem.descKey}` as any)}
                   </p>
                 </CardContent>
               </Card>
