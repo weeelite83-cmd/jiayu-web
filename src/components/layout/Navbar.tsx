@@ -9,18 +9,48 @@ import {
   X,
   Factory,
 } from 'lucide-react';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { Locale } from '@/i18n/config';
 
-const navItems = [
-  { name: '首页', href: '/' },
-  { name: '关于我们', href: '/about' },
-  { name: '产品中心', href: '/products' },
-  { name: '应用领域', href: '/applications' },
-  { name: '联系我们', href: '/contact' },
+// 获取翻译后的导航项
+const getNavItems = (t: {
+  home: string;
+  about: string;
+  products: string;
+  applications: string;
+  contact: string;
+  getQuote: string;
+}) => [
+  { name: t.home, href: '/' },
+  { name: t.about, href: '/about' },
+  { name: t.products, href: '/products' },
+  { name: t.applications, href: '/applications' },
+  { name: t.contact, href: '/contact' },
 ];
 
-export function Navbar() {
+interface NavbarProps {
+  locale: Locale;
+  translations: {
+    nav: {
+      home: string;
+      about: string;
+      products: string;
+      applications: string;
+      contact: string;
+      getQuote: string;
+    };
+    footer: {
+      brand: string;
+    };
+  };
+}
+
+export function Navbar({ locale, translations }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  
+  const navItems = getNavItems(translations.nav);
+  const brandName = locale === 'zh' ? '嘉钰不锈钢' : 'Jiayu Stainless Steel';
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
@@ -31,12 +61,12 @@ export function Navbar() {
               <Factory className="w-5 h-5 text-white" />
             </div>
             <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-              嘉钰不锈钢
+              {brandName}
             </span>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -50,9 +80,13 @@ export function Navbar() {
                 {item.name}
               </Link>
             ))}
+            
+            {/* Language Switcher */}
+            <LanguageSwitcher currentLocale={locale} />
+            
             <Link href="/contact">
               <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
-                获取报价
+                {translations.nav.getQuote}
               </Button>
             </Link>
           </div>
@@ -87,7 +121,7 @@ export function Navbar() {
             ))}
             <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
               <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
-                获取报价
+                {translations.nav.getQuote}
               </Button>
             </Link>
           </div>

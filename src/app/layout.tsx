@@ -1,62 +1,65 @@
 import type { Metadata } from 'next';
-import { Inspector } from 'react-dev-inspector';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getLocale } from 'next-intl/server';
+import { cookies } from 'next/headers';
+import { Locale, locales } from '@/i18n/config';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: '嘉钰不锈钢 | 专业不锈钢管生产厂家',
-    template: '%s | 嘉钰不锈钢',
+    default: 'Jiayu Stainless Steel | Professional Stainless Steel Pipe Manufacturer',
+    template: '%s | Jiayu Stainless Steel',
   },
   description:
-    '嘉钰不锈钢是一家集不锈钢管研发、生产、销售于一体的现代化企业，产品涵盖无缝管、焊管、装饰管、管件等全系列，广泛应用于石油化工、食品卫生、医疗器械、建筑装饰等领域。',
+    'Jiayu Stainless Steel is a modern enterprise integrating R&D, production, and sales of stainless steel pipes. Products include seamless pipes, welded pipes, decorative pipes, and fittings, widely used in petrochemical, food hygiene, medical, construction, and other fields.',
   keywords: [
-    '不锈钢管',
-    '不锈钢无缝管',
-    '不锈钢焊管',
-    '不锈钢装饰管',
-    '不锈钢管件',
-    '不锈钢管厂家',
-    '不锈钢管价格',
+    'stainless steel pipe',
+    'stainless steel seamless pipe',
+    'stainless steel welded pipe',
+    'stainless steel decorative pipe',
+    'stainless steel fittings',
+    'stainless steel manufacturer',
   ],
-  authors: [{ name: '嘉钰不锈钢', url: 'https://jiayubxg.com' }],
+  authors: [{ name: 'Jiayu Stainless Steel', url: 'https://jayu-stainless.com' }],
   generator: 'Next.js',
-  // icons: {
-  //   icon: '',
-  // },
   openGraph: {
-    title: '嘉钰不锈钢 | 专业不锈钢管生产厂家',
+    title: 'Jiayu Stainless Steel | Professional Stainless Steel Pipe Manufacturer',
     description:
-      '集研发、生产、销售于一体的不锈钢管专业制造商，产品涵盖无缝管、焊管、装饰管、管件等全系列',
-    url: 'https://jiayubxg.com',
-    siteName: '嘉钰不锈钢',
-    locale: 'zh_CN',
+      'A modern enterprise integrating R&D, production, and sales of stainless steel pipes. Products include seamless pipes, welded pipes, decorative pipes, and fittings.',
+    url: 'https://jayu-stainless.com',
+    siteName: 'Jiayu Stainless Steel',
+    locale: 'en_US',
     type: 'website',
   },
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: 'Coze Code | Your AI Engineer is Here',
-  //   description:
-  //     'Build and deploy full-stack applications through AI conversation. No env setup, just flow.',
-  //   // images: [''],
-  // },
   robots: {
     index: true,
     follow: true,
   },
 };
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isDev = process.env.COZE_PROJECT_ENV === 'DEV';
+  const locale = await getLocale();
+  const messages = await getMessages();
+  const cookieStore = await cookies();
+  
+  // Get locale from cookie or use default
+  const currentLocale = (cookieStore.get('locale')?.value as Locale) || (locale as Locale);
+  const validLocale = locales.includes(currentLocale) ? currentLocale : 'zh';
 
   return (
-    <html lang="en">
-      <body className={`antialiased`}>
-        {isDev && <Inspector />}
-        {children}
+    <html lang={validLocale}>
+      <body className="antialiased">
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
