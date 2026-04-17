@@ -271,7 +271,7 @@ export default async function AboutPage() {
           <p className="text-slate-300 mb-8">
             {isZh ? '如果您有任何问题，欢迎随时联系我们' : 'Feel free to contact us if you have any questions.'}
           </p>
-          <Link href="/contact">
+          <Link href={`/${locale}/contact`}>
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
               {translations.nav.getQuote}
               <ArrowRight className="w-4 h-4 ml-2" />

@@ -260,7 +260,7 @@ export default async function ProductsPage() {
                   ))}
                 </div>
                 
-                <Link href="/contact">
+                <Link href={`/${locale}/contact`}>
                   <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
                     {isZh ? '立即询价' : 'Get Quote'}
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -292,7 +292,7 @@ export default async function ProductsPage() {
           <p className="text-slate-300 mb-8">
             {isZh ? '我们的专业团队随时为您提供产品咨询和技术支持' : 'Our professional team is ready to provide product consultation and technical support.'}
           </p>
-          <Link href="/contact">
+          <Link href={`/${locale}/contact`}>
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
               {translations.nav.getQuote}
               <ArrowRight className="w-4 h-4 ml-2" />

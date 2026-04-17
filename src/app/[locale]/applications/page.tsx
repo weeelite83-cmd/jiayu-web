@@ -275,7 +275,7 @@ export default async function ApplicationsPage() {
                   ))}
                 </ul>
                 
-                <Link href="/contact">
+                <Link href={`/${locale}/contact`}>
                   <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
                     {translations.nav.getQuote}
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -307,7 +307,7 @@ export default async function ApplicationsPage() {
           <p className="text-slate-300 mb-8">
             {isZh ? '我们的技术团队可以根据您的具体需求提供定制化的解决方案' : 'Our technical team can provide customized solutions based on your specific needs.'}
           </p>
-          <Link href="/contact">
+          <Link href={`/${locale}/contact`}>
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
               {translations.nav.getQuote}
               <ArrowRight className="w-4 h-4 ml-2" />

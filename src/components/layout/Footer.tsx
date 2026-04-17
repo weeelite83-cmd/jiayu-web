@@ -66,7 +66,7 @@ export function Footer({ locale }: FooterProps) {
       <div className="max-w-7xl mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <Link href="/" className="flex items-center space-x-2 mb-4">
+            <Link href={`/${locale}`} className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
                 <Factory className="w-5 h-5 text-white" />
               </div>

@@ -150,13 +150,13 @@ export default function Home() {
               {t('home.hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href={`/${locale}/contact`}>
                 <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-base">
                   {t('home.hero.consultNow')}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
-              <Link href="/products">
+              <Link href={`/${locale}/products`}>
                 <Button size="lg" variant="outline" className="text-base">
                   {t('home.hero.productCatalog')}
                 </Button>
@@ -337,7 +337,7 @@ export default function Home() {
               : 'Our professional team is ready to provide product consultation, technical support, and business cooperation services.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <Link href={`/${locale}/contact`}>
               <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
                 {t('home.hero.consultNow')}
                 <ArrowRight className="w-4 h-4 ml-2" />
