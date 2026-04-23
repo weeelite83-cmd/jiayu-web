@@ -4,7 +4,7 @@ import { Locale } from '@/i18n/config';
 
 const footerLinks = {
   quickLinks: [
-    { key: 'home', href: '/' },
+    { key: 'home', href: '' },
     { key: 'about', href: '/about' },
     { key: 'products', href: '/products' },
     { key: 'applications', href: '/applications' },
@@ -87,7 +87,7 @@ export function Footer({ locale }: FooterProps) {
             <ul className="space-y-2 text-slate-400 text-sm">
               {footerLinks.quickLinks.map((link) => (
                 <li key={link.key}>
-                  <Link href={link.href} className="hover:text-white transition-colors">
+                  <Link href={`/${locale}${link.href}`} className="hover:text-white transition-colors">
                     {getLabel('quickLinks', link.key)}
                   </Link>
                 </li>
@@ -100,7 +100,7 @@ export function Footer({ locale }: FooterProps) {
             <ul className="space-y-2 text-slate-400 text-sm">
               {footerLinks.products.map((link) => (
                 <li key={link.key}>
-                  <Link href={link.href} className="hover:text-white transition-colors">
+                  <Link href={`/${locale}${link.href}`} className="hover:text-white transition-colors">
                     {getLabel('products', link.key)}
                   </Link>
                 </li>
@@ -113,7 +113,7 @@ export function Footer({ locale }: FooterProps) {
             <ul className="space-y-2 text-slate-400 text-sm">
               {footerLinks.applications.map((link) => (
                 <li key={link.key}>
-                  <Link href={link.href} className="hover:text-white transition-colors">
+                  <Link href={`/${locale}${link.href}`} className="hover:text-white transition-colors">
                     {getLabel('applications', link.key)}
                   </Link>
                 </li>
