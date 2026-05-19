@@ -16,6 +16,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { getLocale } from 'next-intl/server';
+import { ImageCarousel } from '@/components/ImageCarousel';
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -153,14 +154,27 @@ export default async function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_9aa56281-97ac-4660-86ec-f7f81d65ff80.jpeg?sign=1805510488-88baba56a9-0-2e7cfbee7eac90b94bcba5f1f81a242f2ebdf66ccf2a196acfb949068f42a8e7"
-                  alt="Factory Warehouse"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <ImageCarousel
+                images={[
+                  {
+                    src: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_9aa56281-97ac-4660-86ec-f7f81d65ff80.jpeg?sign=1805510488-88baba56a9-0-2e7cfbee7eac90b94bcba5f1f81a242f2ebdf66ccf2a196acfb949068f42a8e7',
+                    alt: 'Factory Warehouse',
+                  },
+                  {
+                    src: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_51bfd3a2-ad00-4971-aa1e-407ee2f1ffdc.jpeg?sign=1805509421-d4e5102726-0-c151e0722c166365877aba64b6c9cb68c01ad8c325f47b8c7c43f0df75464f22',
+                    alt: 'Jiayu Factory',
+                  },
+                  {
+                    src: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_f1b9a3e7-3e2b-45fc-b9a1-bf0ef381d1c6.jpeg?sign=1805509905-bd3da4e4a6-0-e1f2d9f37979d3cb1b9e2ce1a5f23e8d4f3e9a3b7c4d5e6f7a8b9c0d1e2f3a4b5',
+                    alt: 'Production Line',
+                  },
+                  {
+                    src: 'https://coze-coding-project.tos.coze.site/coze_storage_7618776839309328426/image/generate_image_a2c3d4e5-f6a7-b8c9-d0e1-f2a3b4c5d6e7.jpeg?sign=1805510500-c1d2e3f4a5-0-b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6',
+                    alt: 'Quality Inspection',
+                  },
+                ]}
+                interval={3000}
+              />
             </div>
           </div>
         </div>
