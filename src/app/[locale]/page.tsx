@@ -17,6 +17,7 @@ import {
   Layers,
   Cog,
   Droplets,
+  Globe2,
   Globe,
   Mail,
   Phone,

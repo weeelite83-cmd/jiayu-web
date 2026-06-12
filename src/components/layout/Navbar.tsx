@@ -8,7 +8,7 @@ import {
   Menu,
   X,
   Factory,
-  Globe,
+  Globe2,
 } from 'lucide-react';
 
 import { Locale } from '@/i18n/config';
@@ -95,7 +95,7 @@ export function Navbar({ locale, translations }: NavbarProps) {
               className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md border border-border hover:bg-muted transition-colors"
               title={locale === 'zh' ? 'Switch to English' : '切换到中文'}
             >
-              <Globe className="w-4 h-4 text-muted-foreground" />
+              <Globe2 className="w-4 h-4 text-muted-foreground" />
               <span className="text-xs font-medium text-foreground/80">
                 EN / 中
               </span>
@@ -146,7 +146,7 @@ export function Navbar({ locale, translations }: NavbarProps) {
                 className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md border border-border hover:bg-muted transition-colors"
                 title={locale === 'zh' ? 'Switch to English' : '切换到中文'}
               >
-                <Globe className="w-4 h-4 text-muted-foreground" />
+                <Globe2 className="w-4 h-4 text-muted-foreground" />
                 <span className="text-xs font-medium text-foreground/80">
                   EN / 中
                 </span>
