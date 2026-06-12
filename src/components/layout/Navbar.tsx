@@ -96,8 +96,8 @@ export function Navbar({ locale, translations }: NavbarProps) {
                 <span className="text-sm">{localeNames[locale]}</span>
               </button>
               {/* Dropdown */}
-              <div className="absolute right-0 top-full mt-1 w-48 bg-white rounded-lg shadow-lg border border-slate-200 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
-                {(['zh', 'en', 'ja', 'ko', 'de', 'fr', 'es', 'pt', 'ru', 'ar', 'it', 'nl', 'pl', 'tr', 'vi', 'th'] as const).map((loc) => (
+              <div className="absolute right-0 top-full mt-1 w-40 bg-white rounded-lg shadow-lg border border-slate-200 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                {(['zh', 'en'] as const).map((loc) => (
                   <button
                     key={loc}
                     onClick={() => handleLocaleChange(loc)}
@@ -149,33 +149,15 @@ export function Navbar({ locale, translations }: NavbarProps) {
             {/* Mobile Language Switcher */}
             <div className="pt-2 border-t border-slate-200">
               <div className="text-sm font-medium text-slate-500 mb-2">语言 / Language</div>
-              <div className="grid grid-cols-4 gap-2">
-                {(['zh', 'en', 'ja', 'ko', 'de', 'fr', 'es', 'pt'] as const).map((loc) => (
+              <div className="flex gap-2">
+                {(['zh', 'en'] as const).map((loc) => (
                   <button
                     key={loc}
                     onClick={() => {
                       handleLocaleChange(loc);
                       setIsMenuOpen(false);
                     }}
-                    className={`px-2 py-1 text-sm rounded ${
-                      locale === loc
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                    }`}
-                  >
-                    {localeNames[loc]}
-                  </button>
-                ))}
-              </div>
-              <div className="grid grid-cols-4 gap-2 mt-2">
-                {(['ru', 'ar', 'it', 'nl', 'pl', 'tr', 'vi', 'th'] as const).map((loc) => (
-                  <button
-                    key={loc}
-                    onClick={() => {
-                      handleLocaleChange(loc);
-                      setIsMenuOpen(false);
-                    }}
-                    className={`px-2 py-1 text-sm rounded ${
+                    className={`px-4 py-2 text-sm rounded ${
                       locale === loc
                         ? 'bg-blue-600 text-white'
                         : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
