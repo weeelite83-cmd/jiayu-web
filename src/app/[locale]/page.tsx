@@ -167,9 +167,13 @@ export default function Home() {
             <div className="mt-8 pt-8 border-t border-slate-200">
               <button
                 onClick={() => handleLocaleChange(locale === 'zh' ? 'en' : 'zh')}
-                className="px-6 py-2.5 text-sm font-medium rounded-full border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all"
+                className="relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-muted transition-colors"
+                title={locale === 'zh' ? 'Switch to English' : '切换到中文'}
               >
-                {locale === 'zh' ? '中 / EN' : 'EN / 中'}
+                <Globe className="w-6 h-6 text-muted-foreground" />
+                <span className="absolute text-[9px] font-bold tracking-tight text-foreground/80">
+                  {locale === 'zh' ? 'EN' : '中'}
+                </span>
               </button>
             </div>
           </div>

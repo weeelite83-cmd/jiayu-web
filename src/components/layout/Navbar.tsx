@@ -8,7 +8,7 @@ import {
   Menu,
   X,
   Factory,
-
+  Globe,
 } from 'lucide-react';
 
 import { Locale } from '@/i18n/config';
@@ -92,9 +92,13 @@ export function Navbar({ locale, translations }: NavbarProps) {
             {/* Language Toggle */}
             <button
               onClick={() => handleLocaleChange(locale === 'zh' ? 'en' : 'zh')}
-              className="flex items-center gap-1 px-3 py-1.5 text-sm font-medium rounded-md border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-colors"
+              className="relative flex items-center justify-center w-9 h-9 rounded-full hover:bg-muted transition-colors"
+              title={locale === 'zh' ? 'Switch to English' : '切换到中文'}
             >
-              {locale === 'zh' ? '中 / EN' : 'EN / 中'}
+              <Globe className="w-5 h-5 text-muted-foreground" />
+              <span className="absolute text-[8px] font-bold tracking-tight text-foreground/80">
+                {locale === 'zh' ? 'EN' : '中'}
+              </span>
             </button>
             
             <Link href={`/${locale}/contact`}>
@@ -139,9 +143,13 @@ export function Navbar({ locale, translations }: NavbarProps) {
                   handleLocaleChange(locale === 'zh' ? 'en' : 'zh');
                   setIsMenuOpen(false);
                 }}
-                className="flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-colors"
+                className="relative flex items-center justify-center w-9 h-9 rounded-full hover:bg-muted transition-colors"
+                title={locale === 'zh' ? 'Switch to English' : '切换到中文'}
               >
-                {locale === 'zh' ? '中 / EN' : 'EN / 中'}
+                <Globe className="w-5 h-5 text-muted-foreground" />
+                <span className="absolute text-[8px] font-bold tracking-tight text-foreground/80">
+                  {locale === 'zh' ? 'EN' : '中'}
+                </span>
               </button>
             </div>
             <Link href={`/${locale}/contact`} onClick={() => setIsMenuOpen(false)}>
