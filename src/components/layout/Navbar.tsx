@@ -8,10 +8,10 @@ import {
   Menu,
   X,
   Factory,
-  Globe,
+
 } from 'lucide-react';
-import { LanguageSwitcher } from '@/components/LanguageSwitcher';
-import { Locale, localeNames } from '@/i18n/config';
+
+import { Locale } from '@/i18n/config';
 
 // 获取翻译后的导航项
 const getNavItems = (t: {
@@ -89,27 +89,13 @@ export function Navbar({ locale, translations }: NavbarProps) {
               </Link>
             ))}
             
-            {/* Language Switcher */}
-            <div className="relative group">
-              <button className="flex items-center gap-1 px-3 py-2 text-slate-600 hover:text-blue-600 transition-colors">
-                <Globe className="w-5 h-5" />
-                <span className="text-sm">{localeNames[locale]}</span>
-              </button>
-              {/* Dropdown */}
-              <div className="absolute right-0 top-full mt-1 w-40 bg-white rounded-lg shadow-lg border border-slate-200 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
-                {(['zh', 'en'] as const).map((loc) => (
-                  <button
-                    key={loc}
-                    onClick={() => handleLocaleChange(loc)}
-                    className={`w-full text-left px-4 py-2 text-sm hover:bg-slate-50 transition-colors ${
-                      locale === loc ? 'text-blue-600 font-medium' : 'text-slate-700'
-                    }`}
-                  >
-                    {localeNames[loc]}
-                  </button>
-                ))}
-              </div>
-            </div>
+            {/* Language Toggle */}
+            <button
+              onClick={() => handleLocaleChange(locale === 'zh' ? 'en' : 'zh')}
+              className="flex items-center gap-1 px-3 py-1.5 text-sm font-medium rounded-md border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-colors"
+            >
+              {locale === 'zh' ? '中 / EN' : 'EN / 中'}
+            </button>
             
             <Link href={`/${locale}/contact`}>
               <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
@@ -146,27 +132,17 @@ export function Navbar({ locale, translations }: NavbarProps) {
                 {item.name}
               </Link>
             ))}
-            {/* Mobile Language Switcher */}
+            {/* Mobile Language Toggle */}
             <div className="pt-2 border-t border-slate-200">
-              <div className="text-sm font-medium text-slate-500 mb-2">语言 / Language</div>
-              <div className="flex gap-2">
-                {(['zh', 'en'] as const).map((loc) => (
-                  <button
-                    key={loc}
-                    onClick={() => {
-                      handleLocaleChange(loc);
-                      setIsMenuOpen(false);
-                    }}
-                    className={`px-4 py-2 text-sm rounded ${
-                      locale === loc
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                    }`}
-                  >
-                    {localeNames[loc]}
-                  </button>
-                ))}
-              </div>
+              <button
+                onClick={() => {
+                  handleLocaleChange(locale === 'zh' ? 'en' : 'zh');
+                  setIsMenuOpen(false);
+                }}
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-colors"
+              >
+                {locale === 'zh' ? '中 / EN' : 'EN / 中'}
+              </button>
             </div>
             <Link href={`/${locale}/contact`} onClick={() => setIsMenuOpen(false)}>
               <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">

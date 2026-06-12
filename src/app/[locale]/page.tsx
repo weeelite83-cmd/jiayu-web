@@ -23,7 +23,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { useLocale } from 'next-intl';
-import { localeNames, Locale } from '@/i18n/config';
+import { Locale } from '@/i18n/config';
 
 const products = [
   {
@@ -163,29 +163,14 @@ export default function Home() {
               </Link>
             </div>
             
-            {/* Language Selector */}
+            {/* Language Toggle */}
             <div className="mt-8 pt-8 border-t border-slate-200">
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <Globe className="w-5 h-5 text-slate-500" />
-                <span className="text-sm text-slate-500">
-                  {locale === 'zh' ? '选择语言' : 'Select Language'}
-                </span>
-              </div>
-              <div className="flex justify-center gap-3">
-                {(['zh', 'en'] as const).map((loc) => (
-                  <button
-                    key={loc}
-                    onClick={() => handleLocaleChange(loc)}
-                    className={`px-5 py-2 text-sm rounded-full transition-all ${
-                      locale === loc
-                        ? 'bg-blue-600 text-white shadow-md'
-                        : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
-                    }`}
-                  >
-                    {localeNames[loc]}
-                  </button>
-                ))}
-              </div>
+              <button
+                onClick={() => handleLocaleChange(locale === 'zh' ? 'en' : 'zh')}
+                className="px-6 py-2.5 text-sm font-medium rounded-full border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all"
+              >
+                {locale === 'zh' ? '中 / EN' : 'EN / 中'}
+              </button>
             </div>
           </div>
 
