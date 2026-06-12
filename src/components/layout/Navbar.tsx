@@ -92,12 +92,12 @@ export function Navbar({ locale, translations }: NavbarProps) {
             {/* Language Toggle */}
             <button
               onClick={() => handleLocaleChange(locale === 'zh' ? 'en' : 'zh')}
-              className="relative flex items-center justify-center w-9 h-9 rounded-full hover:bg-muted transition-colors"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md border border-border hover:bg-muted transition-colors"
               title={locale === 'zh' ? 'Switch to English' : '切换到中文'}
             >
-              <Globe className="w-5 h-5 text-muted-foreground" />
-              <span className="absolute text-[8px] font-bold tracking-tight text-foreground/80">
-                {locale === 'zh' ? 'EN' : '中'}
+              <Globe className="w-4 h-4 text-muted-foreground" />
+              <span className="text-xs font-medium text-foreground/80">
+                EN / 中
               </span>
             </button>
             
@@ -143,12 +143,12 @@ export function Navbar({ locale, translations }: NavbarProps) {
                   handleLocaleChange(locale === 'zh' ? 'en' : 'zh');
                   setIsMenuOpen(false);
                 }}
-                className="relative flex items-center justify-center w-9 h-9 rounded-full hover:bg-muted transition-colors"
+                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md border border-border hover:bg-muted transition-colors"
                 title={locale === 'zh' ? 'Switch to English' : '切换到中文'}
               >
-                <Globe className="w-5 h-5 text-muted-foreground" />
-                <span className="absolute text-[8px] font-bold tracking-tight text-foreground/80">
-                  {locale === 'zh' ? 'EN' : '中'}
+                <Globe className="w-4 h-4 text-muted-foreground" />
+                <span className="text-xs font-medium text-foreground/80">
+                  EN / 中
                 </span>
               </button>
             </div>
