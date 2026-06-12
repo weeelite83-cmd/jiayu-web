@@ -17,7 +17,7 @@ import {
   Layers,
   Cog,
   Droplets,
-  Globe2,
+  Languages,
   Globe,
   Mail,
   Phone,
@@ -171,7 +171,7 @@ export default function Home() {
                 className="flex items-center gap-1.5 px-3 py-2 rounded-md border border-border hover:bg-muted transition-colors"
                 title={locale === 'zh' ? 'Switch to English' : '切换到中文'}
               >
-                <Globe className="w-5 h-5 text-muted-foreground" />
+                <Languages className="w-5 h-5 text-muted-foreground" />
                 <span className="text-sm font-medium text-foreground/80">
                   EN / 中
                 </span>
